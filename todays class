@@ -1,0 +1,3 @@
+#include<stdio.h>
+main()
+{float p,c,length,maxlength;
