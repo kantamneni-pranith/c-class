@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<math.h>
+
+
+int main(){
+    int i,n,m,a=0,b,r,z;
+    printf("enter the number:");
+    scanf("%d",&n);
+    m=n;
+    z=n;
+    while(n>=1){
+        n=n/10;
+        a+=1;
+    }
+    for(i=1;i<=a;i++){
+       r=m%10;
+       m=m/10;
+       b=b+pow(r,a);
+       
+    }
+    if(b==z){printf("the given number is amstrong");}
+    else printf("the given number is not armstong");
+    
+    return 0;
+}
