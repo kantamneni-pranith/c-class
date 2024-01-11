@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main(){
+    int n,big,i;
+    printf("enter number of elements:");
+    scanf("%d",&n);
+    int a[n];
+    for(i=0;i<n;i++){
+        
+    printf("enter the element");
+    scanf("%d",&a[i]);
+    big=a[i];
+    if(a[i]>big){
+        big=a[i];
+    }
+    }
+
+    
+    
+    printf("biggest element =%d",big);
+}
