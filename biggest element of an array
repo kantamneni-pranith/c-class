@@ -8,7 +8,7 @@ int main(){
         
     printf("enter the element");
     scanf("%d",&a[i]);
-    big=a[i];
+    
     if(a[i]>big){
         big=a[i];
     }
