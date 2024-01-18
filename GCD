@@ -6,22 +6,28 @@ int main()
     scanf("%d",&a);
     printf("enter second number:");
     scanf("%d",&b);
-   gcd=b;
+    gcd=b;
     if(a<b){
+        c=a;
         a=b;
         b=c;
-        c=a;
     }
-    else{
-        while(b!=0){
-            r=a%b;
-            a=b;
-            
-            b=r;
+    
+    
+    while(b!=0){
+        r=a%b;
+        if(r==0){
             gcd=b;
-            break;}
-            
-            }
-            printf("GCD is %d",gcd);
+            break;
         }
+        else{
+           a=b;
+           b=r;
+           gcd=b;
+        }
+        
+        
+    }
+    printf("GCD is %d",gcd);
+    }
      
