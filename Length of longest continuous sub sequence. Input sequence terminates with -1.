@@ -1,0 +1,12 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int n,a[20],count;
+    while(n!=-1){
+    printf("enter the number:");
+    scanf("%d",&n);
+    count++;
+    }
+   printf("The length of the sub-sequence is %d",count-1);
+}
