@@ -1,0 +1,27 @@
+#include <stdio.h>
+int main()
+{
+    int a,b,c,r,gcd;
+    printf("enter first number:");
+    scanf("%d",&a);
+    printf("enter second number:");
+    scanf("%d",&b);
+   gcd=b;
+    if(a<b){
+        a=b;
+        b=c;
+        c=a;
+    }
+    else{
+        while(b!=0){
+            r=a%b;
+            a=b;
+            
+            b=r;
+            gcd=b;
+            break;}
+            
+            }
+            printf("GCD is %d",gcd);
+        }
+     
