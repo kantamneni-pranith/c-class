@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<math.h>
+int main(){
+    int principle,interest_rate,amount,interest,years;
+    printf("enter the principle amount:");
+    scanf("%d",&principle);
+    printf("enter the interest rate:");
+    scanf("%d",&interest_rate);
+    printf("enter the number of years:");
+    scanf("%d",&years);
+    amount=(principle*(pow((1+interest_rate/100),years)));
+    interest=amount-principle;
+    printf("The amount is %d",amount);
+    printf("\nThe interest earned is %d",interest);
+    
+}
