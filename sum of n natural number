@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+    int n,count=0;
+    printf("enter the number of natural numbers to be added:");
+    scanf("%d",&n);
+    for(int i=1;i<=n;i++){
+        count=count+i;
+    }
+    printf("The sum of the %d natural numbers is %d",n,count);
+    
+    
+}
