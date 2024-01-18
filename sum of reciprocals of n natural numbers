@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include<math.h>
+int main()
+{
+    int n;
+    double sum=0;
+    printf("enter the number of natural numbers to be added:");
+    scanf("%d",&n);
+    for(int i=1;i<=n;i++){
+        sum=sum+(1.0/i);
+    }
+    printf("The sum of the %d natural numbers is %lf",n,sum);
+    
+    
+}
