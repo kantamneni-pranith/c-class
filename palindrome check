@@ -7,7 +7,7 @@ int main() {
     int i,len=0,j=0,c;
     
     printf("enter the string:");
-   fgets(a,20,stdin);
+   gets(a);
    for(i=0;a[i]!='\0';i++){
       len=len+1 ;
    }
