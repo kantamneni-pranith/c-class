@@ -1,0 +1,21 @@
+
+#include <stdio.h>
+
+int main() {
+    char a[20],b[20];
+    int i,len=0,j=0;
+    
+    printf("enter the string:");
+   fgets(a,20,stdin);
+   for(i=0;a[i]!='\0';i++){
+      len=len+1 ;
+   }
+  printf("The length of string is:%d",len-1);
+
+ for(i=len-1;i>=0;i--){
+     b[j]=a[i];
+     j++;
+ }
+ printf("\nThe reversed string is: %s",b);
+    
+}
