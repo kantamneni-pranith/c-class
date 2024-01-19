@@ -1,0 +1,28 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+#include<string.h>
+
+int main() {
+    char a[20],b[20];
+    int i,len=0,j=0,c;
+    
+    printf("enter the string:");
+   fgets(a,20,stdin);
+   for(i=0;a[i]!='\0';i++){
+      len=len+1 ;
+   }
+  printf("The length of string is:%d",len-1);
+
+ for(i=len-1;i>=0;i--){
+     b[j]=a[i];
+     j++;
+ }
+ printf("\nThe reversed string is: %s",b);
+  c= strcmp(a,b);
+
+if(c==0){
+    printf("the given string is a palindrome");
+}
+else
+printf("\nThe given string is not a palindrome");
+}
