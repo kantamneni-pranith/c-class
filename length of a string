@@ -1,0 +1,13 @@
+
+#include <stdio.h>
+
+int main() {
+    int i,len=0;
+    char a[20];
+    printf("enter the string:");
+   fgets(a,20,stdin);
+   for(i=0;a[i]!='\0';i++){
+      len=len+1 ;
+   }
+  printf("The length of string is:%d",len-1);
+}
