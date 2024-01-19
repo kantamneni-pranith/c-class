@@ -1,0 +1,23 @@
+
+#include <stdio.h>
+#include<ctype.h>
+
+int main() {
+    char s[20],p[20];
+    printf("enter the string:");
+    fgets(s,20,stdin);
+    
+    for(int i=0;s[i]!='\0';i++){
+        if(s[i] >= 'A' && s[i] <= 'Z'){
+           p[i]= tolower(s[i]);  
+            
+            
+        }
+        else{
+            p[i]=toupper(s[i]);
+        }
+        
+    }
+   
+    printf("the toggled string is:%s",p);
+}
