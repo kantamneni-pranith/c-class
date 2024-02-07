@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+   int a,b,g,s,sum=0;
+   scanf("%d %d",&a,&b);
+   if(a>b){
+       g=a;
+       s=b;
+   }
+   else{
+       g=b;
+       s=a;
+   }
+   for(int i=1;i<(g/2)+1;i++){
+       if ((g%i)==0){
+          sum=sum+i; 
+       }
+   }
+   if(sum==s){
+       printf("yes");
+   }
+   else{
+       printf("No");
+   }
+}
