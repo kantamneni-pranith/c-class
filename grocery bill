@@ -1,0 +1,52 @@
+#include <stdio.h>
+int price[50],quantity[50],i;
+int amount[50];
+int n;
+float dis,final_price;
+int bill(int n){
+    int total=0;
+    for(i=0;i<n;i++){
+    printf("enter the price:");
+    scanf("%d",&price[i]);
+    printf("enter the quantity:");
+    scanf("%d",&quantity[i]);
+    amount[i]=price[i]*quantity[i];
+    }
+for(i=0;i<n;i++){
+    total=total+amount[i];
+}
+return total;
+}
+float discount(int x){
+    float dis=0;
+    if(x<1000){
+        dis+=(x*5.0)/100;
+    }
+    else if (x >= 1000 && x < 5000){
+        dis+=(x*10.0)/100;
+    }
+    else if(x>5000){
+        dis+=(x*15.0)/100;
+    }
+    return dis;
+}
+void printing(int total,float dis){
+    for(i=0;i<n;i++){
+        printf("%d ",amount[i]);
+    }
+    printf("total:%d",total);
+    printf("discount:%f",dis);
+    final_price =total-dis;
+    printf("final price:%d",final_price);
+}
+
+
+
+int main() {
+
+printf("enter the number of items:");
+scanf("%d",&n);
+int k=bill(n);
+float discnt=discount(k);
+printing(k,discnt);
+}
