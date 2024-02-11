@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main() {
+    int u;
+    float a;
+ printf("enter the units used:");
+ scanf("%d",&u);
+ if(u>300){
+   a=(u-300)*2+150+200;  
+ }
+ else if(200<u<300){
+     a=(u-200)*1.5+200;
+ }
+ else{
+     a=u;
+ }
+ printf("%f",a);
+}-
