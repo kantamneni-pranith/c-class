@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int remain(int,int);
+int main() {
+   int a,b,rem;
+   scanf("%d %d",&a,&b);
+   rem=remain(a,b);
+   printf("%d",rem);
+   return 0;
+}
+int remain(int x,int y){
+    int g,s;
+    if(x>y){
+        g=x;
+        s=y;
+    }
+    else{
+        g=y;
+        s=x;
+    }
+    while(s<=g){
+        g=g-s;
+        
+    }
+    return g;
+}
