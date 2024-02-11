@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include<ctype.h>
+int main() {
+    int i;
+    char a[50];
+   printf("enter the string:");
+   scanf("%s",&a);
+   for(i=0;a[i]!='\0';i++){
+       if(isupper(a[i])){
+           a[i]=tolower(a[i]);
+       }
+       else{
+           a[i]=toupper(a[i]);
+       }
+       
+   }
+   printf("%s",a);
+}
